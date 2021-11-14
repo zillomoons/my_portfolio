@@ -7,4 +7,9 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.container h2{
+    background-color: #f59281;
+    margin-bottom: 30px;
 }

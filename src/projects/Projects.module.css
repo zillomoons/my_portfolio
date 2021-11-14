@@ -1,15 +1,15 @@
 .projectsBlock{
-    height: 100vh;
+    min-height: 100vh;
     background-color: lavenderblush;
+    display: flex;
+    align-items: center;
 }
 .projectsContainer{
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
 }
-.title {
-    background-color: lightgray;
-}
+
 .projects{
     border: 1px solid;
     width: 100%;

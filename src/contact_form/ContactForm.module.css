@@ -1,0 +1,22 @@
+.formBlock {
+    min-height: 100vh;
+    background-color: peachpuff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formContainer{
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 5px;
+}
+.title {
+    background-color: #dbfaff;
+}

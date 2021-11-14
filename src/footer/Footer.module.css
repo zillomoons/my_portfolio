@@ -1,0 +1,21 @@
+.footerBlock{
+    background-color: #ffffc1;
+    padding: 50px 0;
+}
+.footerContainer{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.iconsContainer{
+    border: 1px solid;
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.copyright{
+    font-size: 16px;
+    font-weight: bold;
+}
