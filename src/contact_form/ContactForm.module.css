@@ -20,7 +20,7 @@
 .contactAddress{
     width: 40%;
     min-width: 300px;
-    box-shadow: 0 20px 40px rgba(35 38 125 0.1);
+    box-shadow: 0 20px 40px rgb(35 38 125 /10%);
     margin-bottom: 30px;
     padding: 60px 30px;
 }
@@ -36,6 +36,12 @@
     display: flex;
     align-items: center;
     gap: 15px;
+}
+.singleAddress h6 i{
+    color: #777777;
+    font-size: 25px;
+    line-height: 1;
+    margin-right: 10px;
 }
 .singleAddress a{
     color: #777777;

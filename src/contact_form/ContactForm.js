@@ -12,15 +12,15 @@ export const ContactForm = () => {
                 <div className={s.contactsContainer}>
                     <div className={s.contactAddress}>
                         <div className={s.singleAddress}>
-                            <h6><BsMap/> Address:</h6>
+                            <h6><i><BsMap/></i> Address:</h6>
                             <a href="">Moscow, Russia</a>
                         </div>
                         <div className={s.singleAddress}>
-                            <h6><AiOutlineMail/> Email:</h6>
+                            <h6><i><AiOutlineMail/></i> Email:</h6>
                             <a href="">dolzhit.ts@gmail.com</a>
                         </div>
                         <div className={s.singleAddress}>
-                            <h6><BsTelephone/> Phone:</h6>
+                            <h6><i><BsTelephone/></i> Phone:</h6>
                             <a href="">+7 898 545 45 45</a>
                         </div>
                     </div>

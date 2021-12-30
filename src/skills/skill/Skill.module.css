@@ -38,7 +38,7 @@
 }
 .skill:hover{
     border-color: #ffffff;
-    box-shadow: 0 20px 40px rgba(35 38 125 0.1);
+    box-shadow: 0 20px 40px rgb(35 38 125 /10%);
 }
 @media screen and (max-width: 1270px) {
     .skill{
