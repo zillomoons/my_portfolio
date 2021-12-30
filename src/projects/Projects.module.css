@@ -1,6 +1,6 @@
 .projectsBlock{
-    min-height: 100vh;
-    background-color: lavenderblush;
+    /*min-height: 100vh;*/
+    background-color: #fff;
     display: flex;
     align-items: center;
 }
@@ -11,9 +11,16 @@
 }
 
 .projects{
-    border: 1px solid;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 15px;
 }
+@media screen and (min-width: 1430px){
+    .projects{
+        justify-content: space-between;
+    }
+}
+

@@ -1,5 +1,4 @@
 .container {
-    border: 1px solid;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -7,9 +6,11 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    padding-top: 120px;
+    padding-bottom: 90px
 }
-.container h2{
-    background-color: #f59281;
-    margin-bottom: 30px;
+@media (min-width: 575.98px){
+    .container{
+        justify-content: center;
+    }
 }

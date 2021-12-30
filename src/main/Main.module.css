@@ -1,15 +1,80 @@
 .mainBlock {
-    height: 100vh;
-    background-color: #ffd1e4;
+    min-height: 100vh;
+    background-color: #f6f5ff;
 }
-
-.intro {
-    width: 300px;
-    background-color: lightgray;
+.mainContainer{
+    gap: 50px;
 }
-
+.intro{
+    width: 60%;
+}
 .photo {
     width: 300px;
     height: 400px;
-    background-color: lightblue;
+    border: 5px solid #47bb8e;
+}
+.intro h6{
+    color: #47bb8e;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.intro h1{
+    font-size: 100px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 5px;
+}
+.intro h2{
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.intro p{
+    color: #777777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2;
+    margin-top: 30px;
+}
+.simpleBtn{
+    color: #212529;
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 7px;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+}
+.simpleBtn::before {
+    background-color: rgba(0, 0, 0, 0.07);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 45%;
+    z-index: -1;
+    transition-duration: 0.3s;
+}
+.simpleBtn:hover::before {
+    width: 100%;
+}
+
+@media (max-width: 575.98px){
+    .intro{
+        width: 100%;
+    }
+    .intro h1 {
+        font-size: 45px;
+    }
+    .intro h2{
+        font-size: 20px;
+    }
 }

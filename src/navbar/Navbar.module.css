@@ -1,6 +1,44 @@
-.navbar{
-    border: solid 1px;
-    width: 300px;
+.navbar {
     display: flex;
     justify-content: space-between;
+}
+
+.navbar a {
+    color: #212529;
+    padding: 13px 7px;
+    margin: 10px 15px;
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+}
+
+.navbar a:active{
+    color: #47bb8e;
+}
+.navbar a:hover{
+    color: #47bb8e;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        /*display: none;*/
+        flex-direction: column;
+        background: #212529;
+        position: fixed;
+        z-index: 500;
+        width: 100%;
+        height: 50%;
+        top: 60px;
+        right: -100%;
+        transition: 850ms;
+        padding-top: 80px;
+    }
+    .navbar a{
+        color: white;
+    }
+    .navbar .active{
+        right: 0;
+        transition: 350ms;
+        margin: 0 auto;
+    }
 }

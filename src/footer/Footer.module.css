@@ -1,21 +1,78 @@
 .footerBlock{
-    background-color: #ffffc1;
-    padding: 50px 0;
+    background-color: #212529;
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.footerBlock::before{
+    border-top: 50px solid #ffffff;
+    border-right: 50vw solid transparent;
+    border-bottom: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+}
+.footerBlock::after{
+    border-left: 50vw solid transparent;
+    border-top: 50px solid #ffffff;
+    border-bottom: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 0;
 }
 .footerContainer{
     flex-direction: column;
     justify-content: flex-start;
+    padding: 0;
 }
 
-.iconsContainer{
-    border: 1px solid;
+.socialIcons{
     display: flex;
-    width: 280px;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin: 30px 0;
+}
+.socialIcons a{
+    color: #777777;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.socialIcons a:hover{
+    color: #47bb8e;
+}
+.socialIcons a:not(:last-child) {
+    margin-right: 30px;
 }
 .copyright{
-    font-size: 16px;
-    font-weight: bold;
+    color: #999999;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo{
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 1.5px;
+}
+.logo a{
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.logo a:hover{
+    color: #fff;
+}
+.logo span{
+    color: #47bb8e;
 }

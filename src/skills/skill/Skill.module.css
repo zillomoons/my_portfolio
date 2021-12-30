@@ -1,22 +1,49 @@
 .skill{
-    width: 250px;
-    border: darkcyan 1px solid;
-    background-color: lightgray;
+    /*flex: 0 0 auto;*/
+    width: 30%;
+    border: 1px solid #ebeff5;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 70px 35px;
+    text-align: center;
+    transition-duration: 0.4s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 15px;
-;
 }
+
 .imgContainer{
+    display: flex;
+    justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: lightblue;
+    font-size: 50px;
+    margin: 0 auto;
+    color: #47bb8e;
 }
-.imgContainer img{
-    width: 60px;
-    height: 60px;
+.skill h6{
+    color: #212529;
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 700;
+    line-height: 1.4;
+    /*letter-spacing: 2px;*/
+}
+.skill p{
+    color: #777777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2;
+    margin-bottom: 0;
+}
+.skill:hover{
+    border-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(35 38 125 0.1);
+}
+@media screen and (max-width: 1270px) {
+    .skill{
+        width: 320px;
+        padding: 35px 0;
+    }
 }
 

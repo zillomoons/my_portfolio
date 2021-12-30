@@ -1,14 +1,16 @@
 import React from "react";
 import s from './Skill.module.css';
+import {FaReact, SiRedux, SiTypescript, SiJavascript, SiHtml5 } from "react-icons/all";
+
 
 export const Skill = (props)=> {
     return (
         <div className={s.skill}>
             <div className={s.imgContainer}>
-                <img src={props.icon} alt="skillIcon"/>
+                {React.createElement(props.icon, null, null)}
             </div>
-            <h3 className={s.title}>{props.title}</h3>
-            <span className={s.description}>{props.description}</span>
+            <h6>{props.title}</h6>
+            <p>{props.description}</p>
         </div>
     )
 }

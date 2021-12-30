@@ -1,6 +1,6 @@
 .skillsBlock {
-    min-height: 100vh;
-    background-color: #d7f7d7;
+    /*min-height: 100vh;*/
+    /*background-color: #d7f7d7;*/
     display: flex;
     align-items: center;
 }
@@ -9,12 +9,19 @@
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    border:none;
 }
 
 .skills {
-    border: 1px solid;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 5px;
+}
+@media screen and (max-width: 575.98px) {
+    .skills{
+        justify-content: center;
+    }
 }

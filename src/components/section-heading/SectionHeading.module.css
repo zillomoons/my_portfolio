@@ -1,0 +1,33 @@
+.section_heading{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.section_heading h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgb(33, 37, 41);
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 4px;
+    text-shadow: rgba(0, 0, 0, 0.05) 0px 8px 0px;
+    text-transform: uppercase;
+}
+.section_heading h6{
+    color: #47bb8e;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 575.98px) {
+    .section_heading h1{
+        font-size: 35px;
+    }
+    .section_heading h6{
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+}
