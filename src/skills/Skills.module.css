@@ -20,6 +20,59 @@
     flex-wrap: wrap;
     gap: 5px;
 }
+
+/*Single skill styles*/
+
+.skill{
+    width: 30%;
+    border: 1px solid #ebeff5;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 70px 35px;
+    text-align: center;
+    transition-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    margin: 0 auto;
+    color: #47bb8e;
+}
+.skill h6{
+    color: #212529;
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 700;
+    line-height: 1.4;
+    /*letter-spacing: 2px;*/
+}
+.skill p{
+    /*color: #777777;*/
+    /*font-size: 15px;*/
+    /*font-weight: 300;*/
+    /*line-height: 2;*/
+    /*margin-bottom: 0;*/
+    color: #999999;
+    font-size: 11px;
+    font-weight: 500;
+}
+.skill:hover{
+    border-color: #ffffff;
+    box-shadow: 0 20px 40px rgb(35 38 125 /10%);
+}
+@media screen and (max-width: 1270px) {
+    .skill{
+        width: 320px;
+        padding: 35px 0;
+    }
+}
 @media screen and (max-width: 575.98px) {
     .skills{
         justify-content: center;
