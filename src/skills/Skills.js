@@ -5,14 +5,14 @@ import {SectionHeading} from "../components/section-heading/SectionHeading";
 import {FaReact, SiRedux, SiTypescript, SiJavascript, SiHtml5, FaServer,  VscDebugRestartFrame, SiMaterialui} from "react-icons/all";
 
 const skills = [
-    {id: 1, icon: FaReact, title: "React", description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua. '},
-    {id: 2, icon: SiRedux, title: "Redux", description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua. '},
-    {id: 3, icon: SiTypescript, title: "TypeScript", description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua. '},
-    {id: 4, icon: SiJavascript, title: "JavaScript", description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '},
-    {id: 5, icon: FaServer, title: "Rest API", description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '},
-    {id: 6, icon: VscDebugRestartFrame, title: "Unit tests", description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '},
-    {id: 7, icon: SiHtml5,  title: "HTML & CSS", description: 'Lorem ipsum dolor sit amet. '},
-    {id: 8, icon: SiMaterialui,  title: "Material UI", description: 'Lorem ipsum dolor sit amet. '},
+    {id: 1, icon: FaReact, title: "React", description: 'Used React library for developing UI of SPA. Experienced in creating functional components with Hooks as well as class components. Used HOC to reuse component logic and optimize performance with React.memo.  '},
+    {id: 2, icon: SiRedux, title: "Redux", description: "Implemented Redux for state management of app as BLL. Created reducers for immutable state modification, and used Thunk middleware for asynchronous network requests."},
+    {id: 3, icon: SiTypescript, title: "TypeScript", description: 'Used TypeScript for developing easily scalable and sustainable application. '},
+    {id: 4, icon: SiJavascript, title: "JavaScript", description: 'Experienced in using ES6 features, such as Promises, Classes, Destructuring assignment, Arrow functions etc.'},
+    {id: 5, icon: FaServer, title: "Rest API", description: 'Developed data access layer (DAL) for interaction with RESTful web services by using Axios library.'},
+    {id: 6, icon: VscDebugRestartFrame, title: "Unit tests", description: 'Implemented TDD by creating Unit tests for reducers and components with Jest.'},
+    {id: 7, icon: SiHtml5,  title: "HTML & CSS", description: 'Created styles for UI components by using Styled Components and Sass preprocessor.'},
+    {id: 8, icon: SiMaterialui,  title: "Material UI", description: 'Used Material UI for app development with styles and design out of a box.'},
 ]
 
 export const Skills = () =>{

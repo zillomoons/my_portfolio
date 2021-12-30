@@ -51,17 +51,13 @@
     margin: 20px 0;
     font-weight: 700;
     line-height: 1.4;
-    /*letter-spacing: 2px;*/
+    letter-spacing: 2px;
 }
 .skill p{
-    /*color: #777777;*/
-    /*font-size: 15px;*/
-    /*font-weight: 300;*/
-    /*line-height: 2;*/
-    /*margin-bottom: 0;*/
     color: #999999;
     font-size: 11px;
     font-weight: 500;
+    padding: 0 10px;
 }
 .skill:hover{
     border-color: #ffffff;
