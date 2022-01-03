@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: ${({scrollNav}) => (scrollNav ? '#fff' : 'transparent')};
-  height: 80px;
-  margin-top: -80px;
+  height: 70px;
+  margin-top: -70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +43,7 @@ export const Bars = styled.span`
   color: #212529;
   font-size: 30px;
   height: 30px;
+  margin-top: -10px;
 
   &:hover {
     color: #47bb8e;
