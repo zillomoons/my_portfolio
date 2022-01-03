@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   margin-top: -80px;
   display: flex;
   justify-content: center;
-  font-size: 1rem;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -19,11 +19,8 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   z-index: 1;
-  width: 100%;
-  padding: 0 24px;
-  max-width: 1200px;
+  width: 90%;
 `
 
 export const NavLogo = styled.a`
@@ -32,8 +29,8 @@ export const NavLogo = styled.a`
   letter-spacing: 1.5px;
   color: rgb(33, 37, 41);
   font-family: 'Montserrat Alternates', sans-serif;
-  
-  &:hover{
+
+  &:hover {
     color: rgb(33, 37, 41);
   }
 `
@@ -47,9 +44,13 @@ export const Bars = styled.span`
   font-size: 30px;
   height: 30px;
 
-  @media (min-width: 992px){
-      display: none;
-    }
+  &:hover {
+    color: #47bb8e;
+  }
+
+  @media (min-width: 992px) {
+    display: none;
+  }
 `
 
 export const NavMenu = styled.div`
@@ -68,7 +69,7 @@ export const NavMenu = styled.div`
     transition: 850ms;
     padding-top: 50px;
 
-    &.active{
+    &.active {
       right: 0;
       transition: 350ms;
       margin: 0 auto;
