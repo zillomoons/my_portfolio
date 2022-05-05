@@ -100,6 +100,16 @@
 .formGroup textarea:focus::placeholder {
     color: #47bb8e;
 }
+
+p {
+    color: #bf1650;
+    font-size: 14px;
+}
+
+p::before {
+    display: inline;
+    content: "⚠ ";
+}
 .submitBtn {
     margin: 30px auto;
     padding: 17px 30px;
@@ -130,11 +140,34 @@
     width: 100%;
     transition: width 0.3s ease;
 }
+
+.alertShown {
+    opacity:1;
+    /* width:100px;
+    height:100px; */
+    transition: width 0.5s,
+    height 0.5s,
+    opacity 0.5s 0.5s;
+}
+
+
+.alertHidden {
+    opacity:0;
+    transition: all 250ms linear 2s;
+}
+
+.popUpMessage {
+    background-color: #b8e4d3;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+}
 @media screen and (max-width: 575.98px) {
-    .form{
+    .form {
         width: 80%;
     }
-    .contactsContainer{
+
+    .contactsContainer {
         justify-content: center;
 
     }

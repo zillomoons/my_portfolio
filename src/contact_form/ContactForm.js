@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 import styleContainer from '../common/styles/Container.module.css';
 import {SectionHeading} from "../components/section-heading/SectionHeading";
 import s from './ContactForm.module.css';
 import {AiOutlineFileText, AiOutlineMail, AiOutlineMessage, BsMap, BsTelephone, IoPersonOutline} from "react-icons/all";
+import { useForm } from "react-hook-form";
+import axios from "axios";
 
 export const ContactForm = () => {
     return (
@@ -38,27 +40,50 @@ const ContactAddress = () =>{
     )
 }
 const InnerForm = () => {
+    const { register, formState, handleSubmit, reset } = useForm();
+    const onSubmit = data => {
+        // axios.post('http://localhost:8000/sendMessage', { data });
+        setShowingAlert(true);
+    }
+    const [isShowingAlert, setShowingAlert] = useState(false);
+    
+    useEffect(() => {
+        if (formState.isSubmitSuccessful) {
+            reset({ name: '', contacts: '', subject: '', message: '' })
+            return () => {
+                setTimeout(() => {
+                    setShowingAlert(false)
+                }, 3000)
+            }
+       }
+    }, [formState.isSubmitSuccessful]);
+
+    const alertClass = `${s.popUpMessage} ${isShowingAlert ? s.alertShown : s.alertHidden} `;
     return (
-        <form className={s.form}>
+        <form className={s.form} onSubmit={handleSubmit(onSubmit)}>
             <div className={s.formRow}>
                 <div className={s.formGroup}>
                     <i><IoPersonOutline/></i>
-                    <input type="text" placeholder='Name'/>
+                    <input {...register("name", {required: true})} placeholder='Name' />
+                    {formState.errors.name?.type === 'required' && <p>Name is required</p>}
                 </div>
                 <div className={s.formGroup}>
                     <i><AiOutlineMail/></i>
-                    <input type="email" placeholder='Email'/>
+                    <input {...register("contacts", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })} type="email" placeholder='Email' />
+                    {formState.errors.contacts?.type === 'required' && <p>Email is required</p>}
+                    {formState.errors.contacts?.type === 'pattern' && <p>Invalid email</p>}
                 </div>
             </div>
             <div className={s.formGroup}>
                 <i><AiOutlineFileText/></i>
-                <input type="text" placeholder='Subject'/>
+                <input {...register("subject")} placeholder='Subject'/>
             </div>
             <div className={s.formGroup}>
                 <i><AiOutlineMessage/></i>
-                <textarea placeholder='Message'/>
+                <textarea placeholder='Message'{...register('message')}/>
             </div>
             <button className={s.submitBtn} type='submit'>Send message</button>
+            <div className={alertClass}>Thanks for your message. I'll be in touch as soon as possible.</div>
         </form>
     )
 }
