@@ -65,13 +65,13 @@ const InnerForm = () => {
                 <div className={s.formGroup}>
                     <i><IoPersonOutline/></i>
                     <input {...register("name", {required: true})} placeholder='Name' />
-                    {formState.errors.name?.type === 'required' && <p>Name is required</p>}
+                    {formState.errors.name?.type === 'required' && <p className={s.errorMessage}>Name is required</p>}
                 </div>
                 <div className={s.formGroup}>
                     <i><AiOutlineMail/></i>
                     <input {...register("contacts", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })} type="email" placeholder='Email' />
-                    {formState.errors.contacts?.type === 'required' && <p>Email is required</p>}
-                    {formState.errors.contacts?.type === 'pattern' && <p>Invalid email</p>}
+                    {formState.errors.contacts?.type === 'required' && <p className={s.errorMessage}>Email is required</p>}
+                    {formState.errors.contacts?.type === 'pattern' && <p className={s.errorMessage}>Invalid email</p>}
                 </div>
             </div>
             <div className={s.formGroup}>

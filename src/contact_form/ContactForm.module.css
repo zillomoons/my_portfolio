@@ -101,12 +101,12 @@
     color: #47bb8e;
 }
 
-p {
+.errorMessage {
     color: #bf1650;
     font-size: 14px;
 }
 
-p::before {
+.errorMessage::before {
     display: inline;
     content: "⚠ ";
 }
