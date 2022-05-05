@@ -42,7 +42,7 @@ const ContactAddress = () =>{
 const InnerForm = () => {
     const { register, formState, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        // axios.post('http://localhost:8000/sendMessage', { data });
+        axios.post('http://localhost:8000/sendMessage', { data });
         setShowingAlert(true);
     }
     const [isShowingAlert, setShowingAlert] = useState(false);
