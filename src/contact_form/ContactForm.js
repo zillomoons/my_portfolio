@@ -40,9 +40,10 @@ const ContactAddress = () =>{
     )
 }
 const InnerForm = () => {
+    const baseURL = 'https://nodejs-gmail-zillomoons.vercel.app/'
     const { register, formState, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:8000/sendMessage', { data });
+        axios.post(`${baseURL}sendMessage`, { data });
         setShowingAlert(true);
     }
     const [isShowingAlert, setShowingAlert] = useState(false);
