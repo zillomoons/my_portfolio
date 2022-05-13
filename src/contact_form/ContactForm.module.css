@@ -36,21 +36,22 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    color: var(--heading-text-color);
 }
 .singleAddress h6 i{
-    color: #777777;
+    color: var(--main-text-color);
     font-size: 25px;
     line-height: 1;
     margin-right: 10px;
 }
 .singleAddress a{
-    color: #777777;
+    color: var(--main-text-color);
     font-size: 15px;
     font-weight: 300;
     line-height: 1.8;
 }
 .singleAddress a:hover{
-    color: #47bb8e;
+    color: var(--accent-text-color);
 }
 .form{
     display: flex;
@@ -90,7 +91,7 @@
 }
 .formGroup input:focus,
 .formGroup textarea:focus {
-    border-color: #47bb8e;
+    border-color: var(--accent-text-color);
 }
 .formGroup input::placeholder,
 .formGroup textarea::placeholder {
@@ -98,7 +99,7 @@
 }
 .formGroup input:focus::placeholder,
 .formGroup textarea:focus::placeholder {
-    color: #47bb8e;
+    color: var(--accent-text-color);
 }
 
 .errorMessage {
@@ -113,7 +114,7 @@
 .submitBtn {
     margin: 30px auto;
     padding: 17px 30px;
-    background-color: #47bb8e;
+    background-color: var(--accent-text-color);
     color: #fff;
     border-radius: 4px;
     border: none;
@@ -125,26 +126,24 @@
     z-index: 1;
 }
 .submitBtn::before{
-    background-color: #212529;
+    background-color: var(--heading-text-color);
+    border-radius: 4px;
     content: "";
     position: absolute;
     top: 0;
     left: 100%;
     width: 0;
     height: 100%;
-    transition-duration: 0.3s;
+    transition: all 0.5s ease-in-out;
     z-index: -1;
 }
 .submitBtn:hover::before{
     left: 0;
     width: 100%;
-    transition: width 0.3s ease;
 }
 
 .alertShown {
     opacity:1;
-    /* width:100px;
-    height:100px; */
     transition: width 0.5s,
     height 0.5s,
     opacity 0.5s 0.5s;
@@ -162,6 +161,22 @@
     border-radius: 8px;
     color: white;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 0;
+    -webkit-text-fill-color: #1f1f20;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+}
+
 @media screen and (max-width: 575.98px) {
     .form {
         width: 80%;

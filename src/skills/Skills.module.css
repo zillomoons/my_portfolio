@@ -43,10 +43,10 @@
     height: 60px;
     font-size: 50px;
     margin: 0 auto;
-    color: #47bb8e;
+    color: var(--accent-text-color);
 }
 .skill h6{
-    color: #212529;
+    color: var(--heading-text-color);
     font-size: 18px;
     margin: 20px 0;
     font-weight: 700;
@@ -54,10 +54,11 @@
     letter-spacing: 2px;
 }
 .skill p{
-    color: #999999;
+    color: var(--secondary-text-color);
     font-size: 11px;
     font-weight: 500;
     padding: 0 10px;
+    transition: all 0.3s ease-in-out;
 }
 .skill:hover{
     border-color: #ffffff;

@@ -5,24 +5,22 @@ import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 import {FaGithub, FaLinkedin, FaTelegram, SiCodewars} from "react-icons/all";
 
 const icons = [
-    {icon: FaGithub, href: ''},
-    {icon: FaLinkedin, href: ''},
-    {icon: FaTelegram, href: ''},
-    {icon: SiCodewars, href: ''},
+    {icon: FaGithub, href: 'https://github.com/zillomoons'},
+    {icon: FaLinkedin, href: 'https://www.linkedin.com/in/dolzhit-ts/'},
+    {icon: FaTelegram, href: 'https://t.me/dolzhit_ts'},
+    {icon: SiCodewars, href: 'https://www.codewars.com/users/zillowmoon'},
     ]
 export const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
-                <div className={s.logo}><a href="#top">Dolzhi<span>t</span></a> </div>
+                <div className={s.logo}><a href="#top">Dolzh<span>it</span></a> </div>
                 <div className={s.socialIcons}>
-                    {icons.map((icon, index) => <a key={index} href={icon.href}>
+                    {
+                        icons.map((icon, index) => <a key={index} href={icon.href} rel="noreferrer" target="_blank" >
                         {React.createElement(icon.icon, null, null)}
-                    </a>)}
-                    {/*<a href=""><FaGithub /></a>*/}
-                    {/*<a href=""><FaLinkedin /></a>*/}
-                    {/*<a href=""><SiCodewars /></a>*/}
-                    {/*<a href=""><FaTelegram /></a>*/}
+                        </a>)
+                    }
                 </div>
                 <div className={s.copyright}><AiOutlineCopyrightCircle />2021 All rights reserved</div>
             </div>

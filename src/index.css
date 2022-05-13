@@ -4,16 +4,23 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+:root{
+  --main-bg-color: #f6f5ff;
+  --accent-text-color: #47bb8e;
+  --heading-text-color: #212529;
+  --main-text-color: #777777;
+  --secondary-text-color: #999999;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
 }
 a{
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 a:hover {
-  color: #47bb8e;
-  transition: width 0.3s ease-in-out;
+  color: var(--accent-text-color);
 }
 
 

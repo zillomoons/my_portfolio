@@ -5,20 +5,25 @@ import s from './ContactForm.module.css';
 import {AiOutlineFileText, AiOutlineMail, AiOutlineMessage, BsMap, BsTelephone, IoPersonOutline} from "react-icons/all";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { Fade } from "react-awesome-reveal";
 
 export const ContactForm = () => {
     return (
         <div id='contacts' className={s.formBlock}>
             <div className={`${styleContainer.container} ${s.formContainer}`}>
-                <SectionHeading smallHeading='get in touch' mainHeading='contact me.'/>
+                <SectionHeading smallHeading='get in touch' mainHeading='contact me.' />
                 <div className={s.contactsContainer}>
-                    <ContactAddress />
-                    <InnerForm />
+                    <Fade>
+                        <ContactAddress />
+                    </Fade>
+                    <Fade>
+                        <InnerForm />
+                    </Fade>                     
                 </div>
             </div>
         </div>
     )
-}
+};
 
 const contacts = [
     {title: 'Address', icon: BsMap, description: 'Moscow, Russia', href: ''},

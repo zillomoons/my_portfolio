@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
+
 
 export const Nav = styled.nav`
   background: ${({scrollNav}) => (scrollNav ? '#fff' : 'transparent')};
@@ -29,24 +31,25 @@ export const NavLogo = styled.a`
   letter-spacing: 1.5px;
   color: rgb(33, 37, 41);
   font-family: 'Montserrat Alternates', sans-serif;
+  color: var(--heading-text-color);
 
   &:hover {
     color: rgb(33, 37, 41);
   }
 `
 export const AccentSpan = styled.span`
-  color: #47bb8e;
+  color: var(--accent-text-color);
 `
 
 export const Bars = styled.span`
   align-self: center;
-  color: #212529;
+  color: var(--heading-text-color);
   font-size: 30px;
   height: 30px;
   margin-top: -10px;
 
   &:hover {
-    color: #47bb8e;
+    color: var(--accent-text-color);
   }
 
   @media (min-width: 992px) {
@@ -60,7 +63,7 @@ export const NavMenu = styled.div`
 
   @media screen and (max-width: 992px) {
     flex-direction: column;
-    background: #212529;
+    background: var(--heading-text-color);
     position: fixed;
     z-index: 500;
     width: 100%;
@@ -79,13 +82,17 @@ export const NavMenu = styled.div`
   }
 `
 
-export const NavbarLink = styled.a`
-  color: #212529;
+export const NavbarLink = styled(Link)`
+  color: var(--heading-text-color);
   padding: 13px 7px;
   margin: 10px 15px;
   font-size: 13px;
   font-weight: 500;
   display: block;
+
+  &.active {
+    color: var(--accent-text-color);
+  }
 
   @media screen and (max-width: 992px) {
     color: white;
