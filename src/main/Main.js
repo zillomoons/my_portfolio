@@ -82,11 +82,9 @@ export const Main = () => {
                     <Fade>
                         <h6>Hello, I'm</h6>
                         <h1>Dolzhit</h1>
-                        
                         <h2> frontend developer</h2>
-                        <p>Hello! I'm Dolzhit. Frontend developer from Moscow, Russia. I'm experienced in UI development using React / Redux /TypeScript.</p>
+                        <p>Hello! I'm Dolzhit. Frontend developer from Ulan-Ude, Buryatia. I'm experienced in UI development using React / Redux /TypeScript.</p>
                         <a href="https://github.com/zillomoons/my_portfolio/raw/master/dolzhit_ts_resume.pdf" target="_blank" rel='noreferrer' download className={s.simpleBtn}>Download CV</a>
-
                     </Fade>
                     </div>                
                 <Tilt scale={1.05}>

@@ -8,9 +8,9 @@ import todoImg from '../assets/todo.png';
 import counter from '../assets/counter.png';
 
 const projects = [
-    {id: 1, bgImage: { backgroundImage: 'url(' + socNet + ')' }, title: 'Social Network', href: 'https://github.com/zillomoons/social_network_ts', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua. '},
-    {id: 2, bgImage: {backgroundImage: 'url(' + todoImg + ')'}, title: 'TODO List', href: 'https://github.com/zillomoons/todolist-ts_styled_components', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua.consectetur adipiscing elit, magna aliqua '},
-    {id: 3, bgImage: {backgroundImage: 'url(' + counter + ')'}, title: 'Counter', href: 'https://github.com/zillomoons/counter', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, magna aliqua. '},
+    {id: 1, bgImage: { backgroundImage: 'url(' + socNet + ')' }, title: 'Social Network', href: 'https://github.com/zillomoons/social_network_ts', description: 'SPA created with React JS library, Redux for state management, TypeScript for scalability, Material UI for beauty.'},
+    {id: 2, bgImage: {backgroundImage: 'url(' + todoImg + ')'}, title: 'TODO List', href: 'https://github.com/zillomoons/todolist-ts_styled_components', description: 'Application build with ReactJS/Redux/TypeScript and styled components library.'},
+    {id: 3, bgImage: {backgroundImage: 'url(' + counter + ')'}, title: 'Counter', href: 'https://github.com/zillomoons/counter', description: 'Application build with ReactJS/Redux/TypeScript.'},
 ]
 
 
