@@ -26,7 +26,7 @@ export const ContactForm = () => {
 };
 
 const contacts = [
-    {title: 'Address', icon: BsMap, description: 'Irkutsk, Russia', href: ''},
+    {title: 'Address', icon: BsMap, description: 'Ulan-Ude, Russia', href: ''},
     {title: 'Email', icon: AiOutlineMail, description: 'dolzhit.ts@gmail.com', href: ''},
     {title: 'Phone', icon: BsTelephone, description: '+7 908 597 1484', href: ''},
 ]
