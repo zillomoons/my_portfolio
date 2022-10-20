@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my_portfolio/static/css/main.8bec5838.chunk.css",
-    "main.js": "/my_portfolio/static/js/main.7ad633b5.chunk.js",
-    "main.js.map": "/my_portfolio/static/js/main.7ad633b5.chunk.js.map",
+    "main.js": "/my_portfolio/static/js/main.463b7796.chunk.js",
+    "main.js.map": "/my_portfolio/static/js/main.463b7796.chunk.js.map",
     "runtime-main.js": "/my_portfolio/static/js/runtime-main.651da928.js",
     "runtime-main.js.map": "/my_portfolio/static/js/runtime-main.651da928.js.map",
     "static/js/2.22664a24.chunk.js": "/my_portfolio/static/js/2.22664a24.chunk.js",
@@ -12,6 +12,7 @@
     "index.html": "/my_portfolio/index.html",
     "static/css/main.8bec5838.chunk.css.map": "/my_portfolio/static/css/main.8bec5838.chunk.css.map",
     "static/js/2.22664a24.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.22664a24.chunk.js.LICENSE.txt",
+    "static/media/chat_app.36df447c.png": "/my_portfolio/static/media/chat_app.36df447c.png",
     "static/media/me.4983c20a.png": "/my_portfolio/static/media/me.4983c20a.png",
     "static/media/soc_network.b4fd3727.jpg": "/my_portfolio/static/media/soc_network.b4fd3727.jpg"
   },
@@ -19,6 +20,6 @@
     "static/js/runtime-main.651da928.js",
     "static/js/2.22664a24.chunk.js",
     "static/css/main.8bec5838.chunk.css",
-    "static/js/main.7ad633b5.chunk.js"
+    "static/js/main.463b7796.chunk.js"
   ]
 }
